@@ -1,0 +1,36 @@
+.container-fluid {
+    padding: 0px;
+}
+
+header {
+    box-sizing: border-box;
+}
+
+header nav div:nth-of-type(1) {}
+
+header nav div:nth-of-type(1) a h4 {
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+section div p {
+    text-align: justify;
+}
+
+footer {
+    margin-top: 5px;
+}
+
+footer p {
+    font-size: 10px;
+}
+
+footer a {
+    font-size: 8px;
+}
+
+@media screen and (max-width: 767px) {
+    #mobileNav ul li {
+        width: 100%;
+    }
+}
