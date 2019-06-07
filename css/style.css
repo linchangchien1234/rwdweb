@@ -12,6 +12,48 @@ header nav div:nth-of-type(1) a h4 {
     margin-bottom: 0;
 }
 
+@media screen and (min-width: 1200px) {
+    main {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    header nav {
+        background: #343a40;
+        font-size: 0.5em;
+    }
+
+    .owl-carousel .owl-stage-outer {
+        height: 850px;
+    }
+
+    main {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+
+    header nav {
+        background: #343a40;
+    }
+
+    .owl-carousel .owl-stage-outer {
+        margin-top: 80px;
+    }
+
+    main {
+        margin-top: 30px;
+    }
+
+
+
+
+}
+
+
 /*-----------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------*/
 /*index*/
@@ -22,9 +64,6 @@ main .wrapper {
     overflow: hidden;
 }
 
-main .wrapper img {
-    height: 850px;
-}
 
 main .wrapper .owl-theme .owl-dots .owl-dot span {
     background: #262626;
@@ -39,10 +78,6 @@ main .wrapper .owl-theme .owl-dots .owl-dot.active span,
 /*-----------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------*/
 /*contnet*/
-
-main {
-    margin-top: 100px;
-}
 
 main article div p {
     text-align: justify;
@@ -65,7 +100,7 @@ main div div.card {
     width: 300px;
 }
 
-@media (min-width: 576px) {
+@media screen and (min-width: 576px) {
     main div div.card {
         width: 400px;
     }
@@ -76,17 +111,149 @@ main div div.card {
 /*image End*/
 /*-----------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------*/
+/*callus*/
+@media screen and (min-width: 1200px) {
+    main div#formmsg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main div#formmsg form {
+        background: gray;
+        width: 30%;
+        height: 100%;
+        position: relative;
+    }
+
+    main div#formmsg form h3 {
+        margin-bottom: 15px;
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    main div#formmsg form p:nth-of-type(1) {
+        position: absolute;
+        top: 23%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    main div#formmsg form p:nth-of-type(2) {
+        position: absolute;
+        top: 31%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    main div#formmsg form p:nth-of-type(3) {
+        position: absolute;
+        top: 37%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    main div#formmsg form p:nth-of-type(4) {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    main div#formmsg form p:nth-of-type(5) {
+        position: absolute;
+        top: 53%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    main div#formmsg form p:nth-of-type(6) {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    main div#formmsg form>label {
+        position: absolute;
+        top: 68%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+    }
+
+    main div#formmsg form select {
+        position: absolute;
+        top: 68%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    main div#formmsg form p:nth-of-type(7) {
+        position: absolute;
+        top: 76%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+/*callus End*/
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
 /*lognin*/
+@media screen and (min-width: 1200px) {
+    main div.formbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-main div.formbox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    main div.formbox form {
+        background: gray;
+        width: 30%;
+        height: 50%;
+        position: relative;
+    }
+
+    main div.formbox form h3 {
+        margin-bottom: 15px;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    main div.formbox form p:nth-of-type(1) {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    main div.formbox form p:nth-of-type(2) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    main div.formbox form p:nth-of-type(3) {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%,
+            -50%);
+    }
+
+    main div.formbox form p:nth-of-type(1) input,
+    main div.formbox form p:nth-of-type(2) input {
+        border-radius: 15px;
+        padding: 8px;
+    }
 }
 
-main div.formbox form h3 {
-    margin-bottom: 15px;
-}
 
 /*lognin End*/
 /*-----------------------------------------------------------------------*/
