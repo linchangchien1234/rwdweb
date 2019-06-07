@@ -24,13 +24,8 @@ main .wrapper img {
     height: 850px;
 }
 
-main .wrapper .owl-theme .owl-dots {
-    z-index: 1000;
-}
-
 main .wrapper .owl-theme .owl-dots .owl-dot span {
     background: #262626;
-
 }
 
 main .wrapper .owl-theme .owl-dots .owl-dot.active span,
@@ -45,6 +40,10 @@ main article {
 
 main article div p {
     text-align: justify;
+}
+
+main article #content ul {
+    margin-bottom: 15px;
 }
 
 /*-----------------------------------------------------------------------*/
