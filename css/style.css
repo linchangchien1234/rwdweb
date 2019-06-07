@@ -4,6 +4,8 @@
 
 header {
     box-sizing: border-box;
+    color: #fff;
+    font-size: 1.5em;
 }
 
 header nav div:nth-of-type(1) a h4 {
@@ -18,12 +20,26 @@ main .wrapper {
 }
 
 main .wrapper img {
-    height: 800px;
+    height: 850px;
+}
+
+main .wrapper .owl-theme .owl-dots {
+    z-index: 1000;
+}
+
+main .wrapper .owl-theme .owl-dots .owl-dot span {
+    background: #262626;
+
+}
+
+main .wrapper .owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: gray;
 }
 
 footer {
     margin-top: 5px;
-
+    color: #BBB;
 }
 
 footer p {
