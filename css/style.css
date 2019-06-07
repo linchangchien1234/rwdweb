@@ -6,23 +6,30 @@ header {
     box-sizing: border-box;
 }
 
-header nav div:nth-of-type(1) {}
-
 header nav div:nth-of-type(1) a h4 {
     margin-top: 5px;
     margin-bottom: 0;
 }
 
-section div p {
-    text-align: justify;
+main .wrapper {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+main .wrapper img {
+    height: 800px;
 }
 
 footer {
     margin-top: 5px;
+
 }
 
 footer p {
     font-size: 10px;
+    margin-left: 10px;
+    margin-bottom: 2px;
 }
 
 footer a {
