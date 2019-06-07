@@ -34,7 +34,7 @@ main .wrapper .owl-theme .owl-dots .owl-dot.active span,
 }
 
 /*-----------------------------------------------------------------------*/
-main article {
+main {
     margin-top: 100px;
 }
 
@@ -48,6 +48,17 @@ main article #content ul {
 
 /*-----------------------------------------------------------------------*/
 
+main div.formbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main div.formbox form h3 {
+    margin-bottom: 15px;
+}
+
+/*-----------------------------------------------------------------------*/
 footer {
     margin-top: 5px;
     color: #BBB;

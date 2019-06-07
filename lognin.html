@@ -17,7 +17,7 @@
 
 <body>
     <header class="container-fluid">
-        <nav class="navbar navbar-expand-lg  navbar-dark fixed-top">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
             <div class="col-sm-4 col-md-2 col-lg-2">
                 <button class="navbar-toggler" data-toggle="collapse" data-target="#mobileNav">
                     <span navbar-toggler-icon></span>
@@ -58,69 +58,30 @@
             </div>
         </nav>
     </header>
-    <div class="wrapper">
-        <div class="owl-carousel owl-theme">
-            <div class="item"><img src="image/01.jpg"></div>
-            <div class="item"><img src="image/02.jpg"></div>
-            <div class="item"><img src="image/03.jpg"></div>
-            <div class="item"><img src="image/04.jpg"></div>
-            <div class="item"><img src="image/05.jpg"></div>
-            <div class="item"><img src="image/06.jpg"></div>
-            <div class="item"><img src="image/07.jpg"></div>
-            <div class="item"><img src="image/08.jpg"></div>
-            <div class="item"><img src="image/09.jpg"></div>
-            <div class="item"><img src="image/10.jpg"></div>
+    <main>
+        <div class="container formbox" style="height: 800px">
+            <form action="" method="">
+                <h3><strong>會員登入系統:</strong></h3>
+                <p>
+                    <label for="username">帳號: </label>
+                    <input type="text" name="username" placeholder="username">
+                </p>
+                <p>
+                    <label for="password">密碼: </label>
+                    <input type="password" name="password" placeholder="password">
+                </p>
+                <p>
+                    <input type="submit" name="" id="" value="送出" class="btn btn-info">
+                    <input type="button" name="" id="" value="註冊" class="btn btn-info">
+                </p>
+            </form>
         </div>
-    </div>
+    </main>
     <aside></aside>
     <footer>
         <p>文章來源: <a href="https://www.wagor.tc.edu.tw/doc/articles/articles.htm" target="_blank">佳文共賞</a></p>
         <p>圖片來源: <a href="https://hk.best-wallpaper.net/" target="_blank">精品桌布站</a></p>
     </footer>
-    <!-- Owl Stylesheets -->
-    <link rel="stylesheet" type="text/css" href="assets/owl.carousel.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/owl.theme.default.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script>
-    $('.owl-carousel').owlCarousel({
-        responsive: true,
-        responsiveRefreshRate: 200,
-        //每200毫秒檢測視窗寬度並做相對應的调整，主要用于響應式
-        loop: true,
-        autoplayHoverPause: true, // 滑鼠經過時暫停
-        margin: 50,
-        autoplay: true,
-        autoplayTimeout: 3000,
-        /*nav: true, //導航
-        navText: ["<<", ">>"], // 導航文字*/
-        scrollPerPage: true, //每頁滾動而不是每個項目
-        slideSpeed: 3000, //滑動速度
-        rewindSpeed: 1000, //重回的速度
-        animateIn: 'rolln',
-        animateOut: 'rolOut',
-        stagePadding: 30,
-        smartSpeed: 450,
-        autoWidth: true,
-        //響應式張數
-        responsive: {
-            0: {
-                items: 1,
-                nav: false,
-                autoWidth: false,
-                margin: 50,
-            },
-            600: {
-                items: 1,
-            },
-            1000: {
-                items: 1,
-
-            }
-        }
-
-    })
-    </script>
 </body>
 
 </html>
