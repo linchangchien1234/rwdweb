@@ -12,6 +12,8 @@ header nav div:nth-of-type(1) a h4 {
     margin-bottom: 0;
 }
 
+/*-----------------------------------------------------------------------*/
+
 main .wrapper {
     width: 100%;
     height: auto;
@@ -35,6 +37,17 @@ main .wrapper .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
     background: gray;
 }
+
+/*-----------------------------------------------------------------------*/
+main article {
+    margin-top: 100px;
+}
+
+main article div p {
+    text-align: justify;
+}
+
+/*-----------------------------------------------------------------------*/
 
 footer {
     margin-top: 5px;
