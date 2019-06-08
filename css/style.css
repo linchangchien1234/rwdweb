@@ -113,6 +113,124 @@ main div div.card {
 /*image End*/
 /*-----------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------*/
+/*aboutme*/
+#about_me {
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    margin-top: 150px;
+    height: 600px;
+}
+
+.about_card {
+    position: relative;
+    width: 300px;
+    height: 500px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+input,
+.toggle {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 30px;
+    outline: none;
+    z-index: 11;
+}
+
+input {
+    opacity: 0;
+}
+
+.toggle {
+    pointer-events: none;
+    border-radius: 50%;
+    background: #fff;
+    transition: 0.5s;
+    text-align: center;
+    line-height: 40px;
+    font-size: 36px;
+
+}
+
+input:checked~.toggle {
+    transform: rotate(225deg);
+}
+
+#about_card1 .toggle {
+    box-shadow: 0 0 0 0px #9c27b0;
+}
+
+#about_card2 .toggle {
+    box-shadow: 0 0 0 0px #6A5ACD;
+}
+
+#about_card3 .toggle {
+    box-shadow: 0 0 0 0px #5F9EA0;
+}
+
+#about_card4 .toggle {
+    box-shadow: 0 0 0 0px #006400;
+}
+
+#about_card1 input:checked~.toggle {
+    box-shadow: 0 0 0 500px #9c27b0;
+}
+
+#about_card2 input:checked~.toggle {
+    box-shadow: 0 0 0 500px #6A5ACD;
+}
+
+#about_card3 input:checked~.toggle {
+    box-shadow: 0 0 0 500px #5F9EA0;
+}
+
+#about_card4 input:checked~.toggle {
+    box-shadow: 0 0 0 500px #006400;
+}
+
+.card_img,
+.card_text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.card_text {
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 11;
+    pointer-events: none;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+input:checked~.card_text {
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+
+.card_text h3 {
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.card_text p {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+
+
+/*aboutme End*/
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
 /*callus*/
 main div#formmsg {
     display: flex;
