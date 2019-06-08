@@ -22,7 +22,7 @@ header nav div:nth-of-type(1) a h4 {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
     header nav {
         background: #343a40;
         font-size: 0.5em;
@@ -47,6 +47,13 @@ header nav div:nth-of-type(1) a h4 {
     }
 
 }
+
+@media screen and (max-width: 320px) {
+    header nav .navbar-brand {
+        font-size: 0.8em;
+    }
+}
+
 
 
 /*-----------------------------------------------------------------------*/
@@ -107,18 +114,143 @@ main div div.card {
 /*-----------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------*/
 /*callus*/
-@media screen and (min-width: 1200px) {
-    main div#formmsg {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+main div#formmsg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px
+}
+
+main div#formmsg form {
+    background: gray;
+    width: 30%;
+    height: 100%;
+    position: relative;
+}
+
+
+@media screen and (max-width: 767px) {
+    main div#formmsg form {
+        width: 100%;
+        margin-top: 50px;
     }
 
+    main div#formmsg form h3 {
+        margin-bottom: 15px;
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    main div#formmsg form p:nth-of-type(1) {
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    main div#formmsg form p:nth-of-type(2) {
+        position: absolute;
+        top: 28%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    main div#formmsg form p:nth-of-type(3) {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    main div#formmsg form p:nth-of-type(4) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    main div#formmsg form div#checkbox>label {
+        position: absolute;
+        top: 55%;
+        left: 33%;
+        transform: translate(-50%, -50%);
+    }
+
+    main div#formmsg form div#checkbox p {
+        width: 100%;
+        height: 24px;
+        position: absolute;
+        top: 60%;
+        left: 70%;
+        transform: translate(-50%, -50%);
+    }
+
+    main div#formmsg form p:nth-of-type(5) {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    main div#formmsg form>label {
+        position: absolute;
+        top: 80%;
+        left: 32%;
+        transform: translate(-50%, -50%);
+    }
+
+    main div#formmsg form select {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    main div#formmsg form p:nth-of-type(6) {
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media screen and (min-width: 600px) {
     main div#formmsg form {
-        background: gray;
-        width: 30%;
-        height: 100%;
-        position: relative;
+        width: 100%;
+        margin-top: 110px;
+    }
+
+    main div#formmsg form div#checkbox>label {
+        position: absolute;
+        top: 55%;
+        left: 38%;
+        transform: translate(-50%, -50%);
+    }
+
+    main div#formmsg form div#checkbox p {
+        width: 100%;
+        height: 24px;
+        position: absolute;
+        top: 60%;
+        left: 85%;
+        transform: translate(-50%, -50%);
+    }
+
+    main div#formmsg form>label {
+        position: absolute;
+        top: 80%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    main div#formmsg form {
+        width: 80%;
+        height: 80%;
     }
 
     main div#formmsg form h3 {
@@ -157,14 +289,21 @@ main div div.card {
         transform: translate(-50%, -50%);
     }
 
-    main div#formmsg form p:nth-of-type(5) {
+    main div#formmsg form div#checkbox>label {
         position: absolute;
-        top: 53%;
-        left: 50%;
+        top: 49%;
+        left: 39%;
         transform: translate(-50%, -50%);
     }
 
-    main div#formmsg form p:nth-of-type(6) {
+    main div#formmsg form div#checkbox p {
+        height: 24px;
+        position: absolute;
+        top: 53%;
+        transform: translate(-50%, -50%);
+    }
+
+    main div#formmsg form p:nth-of-type(5) {
         position: absolute;
         top: 60%;
         left: 50%;
@@ -185,11 +324,19 @@ main div div.card {
         transform: translate(-50%, -50%);
     }
 
-    main div#formmsg form p:nth-of-type(7) {
+    main div#formmsg form p:nth-of-type(6) {
         position: absolute;
         top: 76%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    main div#formmsg form {
+        width: 30%;
+        height: 85%;
+        margin-top: 0px;
     }
 }
 
@@ -198,54 +345,86 @@ main div div.card {
 /*-----------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------*/
 /*lognin*/
-@media screen and (min-width: 1200px) {
+main div.formbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main div.formbox form {
+    background: gray;
+    position: relative;
+}
+
+main div.formbox form h3 {
+    margin-bottom: 15px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main div.formbox form p:nth-of-type(1) {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main div.formbox form p:nth-of-type(2) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main div.formbox form p:nth-of-type(3) {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,
+        -50%);
+}
+
+main div.formbox form p:nth-of-type(1) input,
+main div.formbox form p:nth-of-type(2) input {
+    border-radius: 15px;
+    padding: 8px;
+}
+
+
+@media screen and (max-width: 768px) {
     main div.formbox {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        height: 500px;
     }
 
     main div.formbox form {
-        background: gray;
+        width: 80%;
+        height: 80%;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    main div.formbox {
+        height: 700px;
+    }
+
+    main div.formbox form {
+        width: 80%;
+        height: 80%;
+    }
+
+
+}
+
+@media screen and (min-width: 1200px) {
+    main div.formbox {
+        height: 700px;
+    }
+
+    main div.formbox form {
         width: 30%;
         height: 50%;
-        position: relative;
-    }
-
-    main div.formbox form h3 {
-        margin-bottom: 15px;
-        position: absolute;
-        top: 20%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    main div.formbox form p:nth-of-type(1) {
-        position: absolute;
-        top: 35%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    main div.formbox form p:nth-of-type(2) {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    main div.formbox form p:nth-of-type(3) {
-        position: absolute;
-        top: 70%;
-        left: 50%;
-        transform: translate(-50%,
-            -50%);
-    }
-
-    main div.formbox form p:nth-of-type(1) input,
-    main div.formbox form p:nth-of-type(2) input {
-        border-radius: 15px;
-        padding: 8px;
     }
 }
 
