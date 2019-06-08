@@ -114,13 +114,57 @@ main div div.card {
 /*-----------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------*/
 /*aboutme*/
-#about_me {
-    display: flex;
-    justify-content: center;
-    align-content: space-between;
-    margin-top: 150px;
-    height: 600px;
+@media screen and (min-width: 1200px) {
+    #about_me {
+        display: flex;
+        justify-content: center;
+        align-content: space-between;
+        margin-top: 150px;
+        height: 600px;
+    }
 }
+
+@media screen and (max-width: 1200px) and (min-width: 768px) {
+    #about_me {
+        margin-top: 100px;
+        position: relative;
+    }
+
+    #about_card3 {
+        margin-top: 50px;
+    }
+
+    #about_card2,
+    #about_card4 {
+        position: absolute;
+
+    }
+
+    #about_card2 {
+        left: 50%;
+        top: 0%;
+    }
+
+    #about_card3 {
+        top: 55%;
+    }
+
+    #about_card4 {
+        left: 50%;
+        top: 52%;
+    }
+}
+
+@media screen and (max-width: 576px) {}
+
+@media screen and (max-width: 768px) and (min-width: 320px) {
+    .card_img {
+        margin-top: 50px;
+    }
+}
+
+
+
 
 .about_card {
     position: relative;
